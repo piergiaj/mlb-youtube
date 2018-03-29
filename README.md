@@ -44,7 +44,7 @@ We additionally annotated each clip containing a pitch with the pitch type (e.g.
 <img src="/examples/bunt1.gif?raw=true" width="425"> <img src="/examples/bunt2.gif?raw=true" width="425">
 
 ### Hit By Pitch
-<img src="/examples/hpb1.gif?raw=true" width="425"> <img src="/examples/hpb2.gif?raw=true" width="425">
+<img src="/examples/hbp1.gif?raw=true" width="425"> <img src="/examples/hbp2.gif?raw=true" width="425">
 
 ### Hard-Negative No Activity
 <img src="/examples/neg1.gif?raw=true" width="425"> <img src="/examples/neg2.gif?raw=true" width="425">
