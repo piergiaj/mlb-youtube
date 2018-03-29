@@ -4,7 +4,8 @@ The MLB-YouTube dataset is a new, large-scale dataset consisting of 20 baseball 
 
 Please see our paper ????? for more details.
 
-EXAMPLES
+Example Frames from various activities:
+![Examples](/examples/mlb-youtube-github.png?raw=true "Examples")
 
 
 # Segmented Dataset
@@ -25,31 +26,32 @@ Hit by Pitch | 14
 We additionally annotated each clip containing a pitch with the pitch type (e.g., fastball, curveball, slider, etc.) and the speed of the pitch. We also collected a set of 2,983 hard negative examples where no action occurs. These examples include views of the crowd, the field, or the players standing before or after a pitch occurred. Examples of the activities and hard negatives are shown below:
 
 ### Strike
-<img src="/examples/strike1.gif?raw=true" width="250"> <img src="/examples/strike2.gif?raw=true" width="250">
+<img src="/examples/strike1.gif?raw=true" width="425"> <img src="/examples/strike2.gif?raw=true" width="425">
 
 ### Ball
-<img src="/examples/ball1.gif?raw=true" width="250"> <img src="/examples/ball2.gif?raw=true" width="250">
+<img src="/examples/ball1.gif?raw=true" width="425"> <img src="/examples/ball2.gif?raw=true" width="425">
 
 ### Swing
-<img src="/examples/swing1.gif?raw=true" width="250"> <img src="/examples/swing2.gif?raw=true" width="250">
+<img src="/examples/swing1.gif?raw=true" width="425"> <img src="/examples/swing2.gif?raw=true" width="425">
 
 ### Hit
-<img src="/examples/hit1.gif?raw=true" width="250"> <img src="/examples/hit2.gif?raw=true" width="250">
+<img src="/examples/hit1.gif?raw=true" width="425"> <img src="/examples/hit2.gif?raw=true" width="425">
 
 ### Foul
-<img src="/examples/foul1.gif?raw=true" width="250"> <img src="/examples/foul2.gif?raw=true" width="250">
+<img src="/examples/foul1.gif?raw=true" width="425"> <img src="/examples/foul2.gif?raw=true" width="425">
 
 ### Bunt
-<img src="/examples/bunt1.gif?raw=true" width="250"> <img src="/examples/bunt2.gif?raw=true" width="250">
+<img src="/examples/bunt1.gif?raw=true" width="425"> <img src="/examples/bunt2.gif?raw=true" width="425">
 
 ### Hit By Pitch
-<img src="/examples/hpb1.gif?raw=true" width="250"> <img src="/examples/hpb2.gif?raw=true" width="250">
+<img src="/examples/hpb1.gif?raw=true" width="425"> <img src="/examples/hpb2.gif?raw=true" width="425">
+
+### Hard-Negative No Activity
+<img src="/examples/neg1.gif?raw=true" width="425"> <img src="/examples/neg2.gif?raw=true" width="425">
+
 
 # Continuous Dataset
-Our continuous video dataset consists of 2,128 1-2 minute long clips from the videos. We densely annotate each frame of the clip with the baseball activities that occur.  Each continuous clip contains on average of 7.2 activities, resulting in a total of over 15,000 activity instances. Here is an example clip with instances annotated:
-
-???
-
+Our continuous video dataset consists of 2,128 1-2 minute long clips from the videos. We densely annotate each frame of the clip with the baseball activities that occur.  Each continuous clip contains on average of 7.2 activities, resulting in a total of over 15,000 activity instances.
 
 
 
