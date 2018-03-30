@@ -51,7 +51,7 @@ We additionally annotated each clip containing a pitch with the pitch type (e.g.
 
 
 # Continuous Dataset
-Our continuous video dataset consists of 2,128 1-2 minute long clips from the videos. We densely annotate each frame of the clip with the baseball activities that occur.  Each continuous clip contains on average of 7.2 activities, resulting in a total of over 15,000 activity instances.
+Our continuous video dataset consists of 2,128 1-2 minute long clips from the videos. We densely annotate each frame of the clip with the baseball activities that occur.  Each continuous clip contains on average of 7.2 activities, resulting in a total of over 15,000 activity instances. We evaluate models using per-frame mean average precision (mAP).
 
 
 
@@ -61,9 +61,78 @@ Our continuous video dataset consists of 2,128 1-2 minute long clips from the vi
 3. To extract the continuous video clips, run `python extract_continuous_videos.py` and change `input_directory` to be the directory containing the full videos and `output_directory` to be the location to save the extracted clips.
 
 # Baseline Experiments
-...
+We compared many approaches using I3D [1] and InceptionV3 [2] as feature extractors.
+
+## Segmented Video Activity Recognition Results
+Please see our paper for more experimental details and results.
+
+Results from multi-label video classification:
+
+| Method | mAP (%) |
+|------------|-----------|
+| Random | 16.3 |
+| I3D + max-pool | 57.2 |
+| I3D + pyramid pooling | 58.7 |
+| I3D + LSTM | 53.1 | 
+| I3D + temporal conv | 58.4 |
+| I3D + sub-events [3] | 61.3 |
+| IncetpitonV3 + max-pool | 54.4 |
+| InceptionV3 + pyramid pooling | 55.3 |
+| InceptionV3 + LSTM | 57.7 | 
+| InceptionV3 + temporal conv | 56.1 |
+| InceptionV3 + sub-events [3] | **62.6** |
+
+Pitch Speed Regression:
+
+| Method | RMSE |
+|------------|-----------|
+| I3D | 4.3 mph |
+| I3D + LSTM | 4.1 mph |
+| I3D + sub-events [3] | 3.9 mph |
+| IncetpitonV3 | 5.3 mph |
+| IncetpitonV3 + LSTM | 4.5 mph |
+| IncetpitonV3 + sub-events [3] | 3.6 mph |
+
+## Continuous Video Activity Detection
+
+| Method | mAP (%) |
+|------------|-----------|
+| Random | 13.4 |
+| IncetpitonV3 | 31.9 |
+| IncetpitonV3 + max-pool | 35.2 |
+| InceptionV3 + pyramid pooling | 36.8 |
+| InceptionV3 + LSTM | 34.1 | 
+| InceptionV3 + temporal conv | 33.4 |
+| InceptionV3 + sub-events [3] | 37.3 |
+| InceptionV3 + super-events [4] | 39.6 |
+| InceptionV3 + sub+super-events | 40.9 |
+| InceptionV3 + TGM [5] | 37.4 |
+| InceptionV3 + 3 TGM [5] | 38.2 |
+| InceptionV3 + super-event [4] + 3 TGM [5] | 42.9 |
+| I3D | 34.2 |
+| I3D + max-pool | 36.8 |
+| I3D + pyramid pooling | 39.7 |
+| I3D + LSTM | 39.4 | 
+| I3D + temporal conv | 39.2 |
+| I3D + sub-events [3] | 38.5 |
+| I3D + super-events [4] | 39.1 |
+| I3D + sub+super-events | 40.4 |
+| I3D + TGM [5] | 38.5 |
+| I3D + 3 TGM [5] | 40.1 |
+| I3D + super-event [4] + 3 TGM [5] | **47.1** |
 
 # Requirements
 
 - [youtube-dl](https://rg3.github.io/youtube-dl/) to download the videos
 - tested with ffmpeg 2.8.11 to extract clips
+
+# References
+[1] J. Carreira and A. Zisserman. Quo vadis, action recognition? A new model and the kinetics dataset. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017.
+
+[2] C. Szegedy, V. Vanhoucke, S. Ioffe, J. Shlens, and Z. Wojna. Rethinking  the  inception  architecture  for  computer  vision. In Proceedings of the IEEE Conference on Computer Visionand Pattern Recognition (CVPR),  2016
+
+[3] A. Piergiovanni,  C. Fan,  and M. S. Ryoo.   Learning latentsub-events in activity videos using temporal attention filters. In Proceedings of the American Association for Artificial Intelligence (AAAI), 2017
+
+[4] A. Piergiovanni  and  M.  S.  Ryoo.  Learning  latent  super-events  to  detect  multiple  activities  in  videos.   In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018 
+
+[5] A. Piergiovanni  and  M.  S.  Ryoo.  Activity Detection with Latent Sub-event Hierarchy Learning.  arXiv preprint arXiv:1803.06316, 2018 
