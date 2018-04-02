@@ -91,7 +91,7 @@ Pitch Speed Regression:
 | I3D + sub-events [3] | 3.9 mph |
 | IncetpitonV3 | 5.3 mph |
 | IncetpitonV3 + LSTM | 4.5 mph |
-| IncetpitonV3 + sub-events [3] | 3.6 mph |
+| IncetpitonV3 + sub-events [3] | **3.6 mph** |
 
 ## Continuous Video Activity Detection
 
@@ -121,10 +121,16 @@ Pitch Speed Regression:
 | I3D + 3 TGM [5] | 40.1 |
 | I3D + super-event [4] + 3 TGM [5] | **47.1** |
 
+# Experiments
+We provide our code to train and evalute the models in the experiments directory. We have the various models implemented in [models.py](/experiments/models.py), a script to load the dataset, and a script to train the models as well. 
+
+We also include our PyTorch implementation of I3D, see [pytorch-i3d](https://github.com/piergiaj/pytorch-i3d) for more details.
+
 # Requirements
 
 - [youtube-dl](https://rg3.github.io/youtube-dl/) to download the videos
 - tested with ffmpeg 2.8.11 to extract clips
+- PyTorch (tested with version 0.3.1)
 
 # References
 [1] J. Carreira and A. Zisserman. Quo vadis, action recognition? A new model and the kinetics dataset. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017.
