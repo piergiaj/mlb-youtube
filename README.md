@@ -133,12 +133,12 @@ We also include our PyTorch implementation of I3D, see [pytorch-i3d](https://git
 - PyTorch (tested with version 0.3.1)
 
 # References
-[1] J. Carreira and A. Zisserman. Quo vadis, action recognition? A new model and the kinetics dataset. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017. (arxiv)[https://arxiv.org/abs/1705.07750] (code)[https://github.com/deepmind/kinetics-i3d]
+[1] J. Carreira and A. Zisserman. Quo vadis, action recognition? A new model and the kinetics dataset. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017. [arxiv](https://arxiv.org/abs/1705.07750) [code](https://github.com/deepmind/kinetics-i3d)
 
 [2] C. Szegedy, V. Vanhoucke, S. Ioffe, J. Shlens, and Z. Wojna. Rethinking  the  inception  architecture  for  computer  vision. In Proceedings of the IEEE Conference on Computer Visionand Pattern Recognition (CVPR),  2016
 
-[3] A. Piergiovanni,  C. Fan,  and M. S. Ryoo.   Learning latentsub-events in activity videos using temporal attention filters. In Proceedings of the American Association for Artificial Intelligence (AAAI), 2017 (arxiv)[https://arxiv.org/abs/1605.08140] (code)[https://github.com/piergiaj/latent-subevents]
+[3] A. Piergiovanni,  C. Fan,  and M. S. Ryoo.   Learning latentsub-events in activity videos using temporal attention filters. In Proceedings of the American Association for Artificial Intelligence (AAAI), 2017 [arxiv](https://arxiv.org/abs/1605.08140) [code](https://github.com/piergiaj/latent-subevents)
 
-[4] A. Piergiovanni  and  M.  S.  Ryoo.  Learning  latent  super-events  to  detect  multiple  activities  in  videos.   In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018 (link)[https://arxiv.org/abs/1712.01938] (code)[https://github.com/piergiaj/super-events-cvpr18]
+[4] A. Piergiovanni  and  M.  S.  Ryoo.  Learning  latent  super-events  to  detect  multiple  activities  in  videos.   In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018 [arxiv](https://arxiv.org/abs/1712.01938) [code](https://github.com/piergiaj/super-events-cvpr18)
 
-[5] A. Piergiovanni  and  M.  S.  Ryoo.  Activity Detection with Latent Sub-event Hierarchy Learning.  arXiv preprint arXiv:1803.06316, 2018 (link)[[https://arxiv.org/abs/1803.06316]
+[5] A. Piergiovanni  and  M.  S.  Ryoo.  Activity Detection with Latent Sub-event Hierarchy Learning.  arXiv preprint arXiv:1803.06316, 2018 [arxiv](https://arxiv.org/abs/1803.06316)
