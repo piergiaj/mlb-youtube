@@ -1,5 +1,5 @@
 # MLB-YouTube Dataset
-1;3409;0c
+
 The MLB-YouTube dataset is a new, large-scale dataset consisting of 20 baseball games from the 2017 MLB post-season available on YouTube with over 42 hours of video footage. Our dataset consists of two components: segmented videos for activity recognition and continuous videos for activity classification. Our dataset is quite challenging as it is created from TV broadcast baseball games where multiple different activities share the camera angle. Further, the motion/appearance difference between the various activities is quite small.
 
 Please see our papers \[[arxiv](https://arxiv.org/abs/1803.06316)\] for more details. Our paper with full experiments will be posed shortly.
