@@ -2,7 +2,7 @@
 
 The MLB-YouTube dataset is a new, large-scale dataset consisting of 20 baseball games from the 2017 MLB post-season available on YouTube with over 42 hours of video footage. Our dataset consists of two components: segmented videos for activity recognition and continuous videos for activity classification. Our dataset is quite challenging as it is created from TV broadcast baseball games where multiple different activities share the camera angle. Further, the motion/appearance difference between the various activities is quite small.
 
-Please see our paper for more details on the dataset \[[arxiv](https://arxiv.org/abs/1804.03247)\].
+Please see our paper for more details on the dataset \[[arXiv](https://arxiv.org/abs/1804.03247)\].
 
 If you use our dataset or find the code useful for your research, please cite our paper:
 
@@ -18,6 +18,23 @@ If you use our dataset or find the code useful for your research, please cite ou
 Example Frames from various activities:
 ![Examples](/examples/mlb-youtube-github.png?raw=true "Examples")
 
+
+**NEW** MLB-YouTube Captions
+
+We densely annotated the videos with captions from the commentary given by the announcers, resulting in approximately 50 hours of matching text and video. These captions only roughly describe what is happening in the video, and often contain unrelated stories or commentary on a previous event, making this a challenging task. 
+Examples of the text and video: 
+![Examples](/examples/mlb-youtube-captions-github.png?raw=true "Examples")
+
+
+For more details see our paper introducing the captions dataset \[[arXiv](https://arxiv.org/abs/1806.)\].
+```
+  @article{mlbcaptions2018}
+        title={Learning Shared Multimodal Embeddings with Unpaired Data},
+	author={AJ Piergiovanni and Michael S. Ryoo},
+        journal={arXiv preprint arXiv:1802.10151},
+        year={2018}
+}
+```
 
 # Segmented Dataset
 Our segmented video dataset consists of 4,290 video clips. Each clip is annotated with the various baseball activities that occur, such as swing, hit, ball, strike, foul, etc. A video clip can contain multiple activities, so we treat this as a multi-label classification task. A full list of the activities and the number of examples of each is shown in the table below. 
