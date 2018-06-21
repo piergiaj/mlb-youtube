@@ -31,7 +31,7 @@ For more details see our paper introducing the captions dataset \[[arXiv](https:
   @article{mlbcaptions2018}
         title={Learning Shared Multimodal Embeddings with Unpaired Data},
 	author={AJ Piergiovanni and Michael S. Ryoo},
-        journal={arXiv preprint arXiv:1802.10151},
+        journal={arXiv preprint arXiv:},
         year={2018}
 }
 ```
