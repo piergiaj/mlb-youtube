@@ -19,7 +19,7 @@ Example Frames from various activities:
 ![Examples](/examples/mlb-youtube-github.png?raw=true "Examples")
 
 
-**NEW** MLB-YouTube Captions
+# NEW! MLB-YouTube Captions
 
 We densely annotated the videos with captions from the commentary given by the announcers, resulting in approximately 50 hours of matching text and video. These captions only roughly describe what is happening in the video, and often contain unrelated stories or commentary on a previous event, making this a challenging task. 
 Examples of the text and video: 
