@@ -26,12 +26,12 @@ Examples of the text and video:
 ![Examples](/examples/mlb-youtube-captions-github.png?raw=true "Examples")
 
 
-For more details see our paper introducing the captions dataset \[[arXiv](https://arxiv.org/abs/1806.)\].
+For more details see our paper introducing the captions dataset \[[arXiv](https://arxiv.org/abs/1806.08251)\].
 ```
   @article{mlbcaptions2018}
         title={Learning Shared Multimodal Embeddings with Unpaired Data},
 	author={AJ Piergiovanni and Michael S. Ryoo},
-        journal={arXiv preprint arXiv:},
+        journal={arXiv preprint arXiv:1806.08251},
         year={2018}
 }
 ```
