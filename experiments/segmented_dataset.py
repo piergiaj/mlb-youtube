@@ -47,9 +47,10 @@ class SegmentedPitchResultMultiLabel(data_utl.Dataset):
             
         with open(negative, 'r') as f:
             self.negs = json.load(f)
-        for n in self.negs:
-            n['labels'] = []
-            self.act_dict.append(n)
+        for n in self.negs.keys():
+            self.negs[n]['labels'] = []
+            self.act_dict[n] = self.negs[n]
+
         self.videos = self.act_dict.keys()
         
     def __getitem__(self, index):
