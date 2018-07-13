@@ -79,3 +79,21 @@ class SegmentedPitchResultMultiLabel(data_utl.Dataset):
     def __len__(self):
         return len(self.videos)
 
+
+def collate_fn(batch):
+    "Pads data and puts it into a tensor of same dimensions"
+    max_len = 0
+    for b in batch:
+        if b[0].shape[0] > max_len:
+            max_len = b[0].shape[0]
+
+    new_batch = []
+    for b in batch:
+        f = np.zeros((max_len, b[0].shape[1], b[0].shape[2], b[0].shape[3]), np\
+.float32)
+        m = np.zeros((max_len), np.float32)
+        l = b[1]
+        f[:b[0].shape[0]] = b[0]
+        m[:b[0].shape[0]] = 1
+        new_batch.append([video_to_tensor(f), torch.from_numpy(m), l, b[2]])
+    return default_collate(new_batch)
