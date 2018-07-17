@@ -68,8 +68,6 @@ class SegmentedPitchResultMultiLabel(data_utl.Dataset):
         multilabel = np.zeros((8,))
 
         img = np.load(path)
-        if img.shape[-1] == 1024:
-            feat = img[np.random.randint(0,10)]
         if len(label) > 0:
             for labs in label:
                 multilabel[l2i[labs]] = 1
