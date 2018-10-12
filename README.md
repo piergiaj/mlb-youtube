@@ -169,4 +169,4 @@ We also include our PyTorch implementation of I3D, see [pytorch-i3d](https://git
 
 [4] A. Piergiovanni  and  M.  S.  Ryoo.  Learning  latent  super-events  to  detect  multiple  activities  in  videos.   In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018 \[[arxiv](https://arxiv.org/abs/1712.01938)\] \[[code](https://github.com/piergiaj/super-events-cvpr18)\]
 
-[5] A. Piergiovanni  and  M.  S.  Ryoo.  Activity Detection with Latent Sub-event Hierarchy Learning.  arXiv preprint arXiv:1803.06316, 2018 \[[arxiv](https://arxiv.org/abs/1803.06316)\]
+[5] A. Piergiovanni  and  M.  S.  Ryoo.  Temporal Gaussian Mixture Layer for Videos.  arXiv preprint arXiv:1803.06316, 2018 \[[arxiv](https://arxiv.org/abs/1803.06316)\]
