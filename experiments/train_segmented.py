@@ -42,7 +42,6 @@ import numpy as np
 import json
 
 import models
-import eccv_models
 import segmented_dataset as sd
 from apmeter import APMeter
 
