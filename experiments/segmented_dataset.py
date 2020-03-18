@@ -24,7 +24,7 @@ def video_to_tensor(pic):
     return torch.from_numpy(pic.transpose([3,0,1,2]))
 
 
-l2i = {'ball':0,'swing':1,'strike':2,'hit':4,'foul':4,'in play':5,'bunt':6,'hit by pitch':7}
+l2i = {'ball':0,'swing':1,'strike':2,'hit':3,'foul':4,'in play':5,'bunt':6,'hit by pitch':7}
 class SegmentedPitchResultMultiLabel(data_utl.Dataset):
     """
       0 - ball
