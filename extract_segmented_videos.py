@@ -46,10 +46,12 @@ def wrapper(clip):
 
     # 클립을 받을 폴더 경로
     output_directory = '/'
-    
+
     duration = clip['end']-clip['start']
     video_title = get_youtube_video_title(clip['url'])
-    local_clip(os.path.join(input_directory, video_title+'.mkv'), clip['start'], duration, str(clip['end'])+'.mp4', output_directory)
+    local_clip(os.path.join(input_directory, video_title+'.mp4'),
+               clip['start'], duration, str(clip['end'])+'.mp4',
+               output_directory)
     return 0
     
 
