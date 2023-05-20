@@ -21,7 +21,7 @@ def local_clip(filename, start_time, duration, output_filename, output_directory
         output = subprocess.check_output(command, shell=True,
                                          stderr=subprocess.STDOUT)
     except subprocess.CalledProcessError as err:
-        print err.output
+        print (err.output)
         return err.output
 
 
